@@ -1,5 +1,23 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-const App: React.FC = () => <h1>Olá Goiás Thérmica</h1>;
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Routes from './routes';
+
+/* import { GlobalStyle } from './styles/global'; */
+
+const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+      {/* <GlobalStyle /> */}
+      <Header />
+      <main>
+        <Routes />
+      </main>
+      <Footer />
+    </BrowserRouter>
+  );
+};
 
 export default App;
