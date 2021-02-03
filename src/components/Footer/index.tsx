@@ -1,5 +1,13 @@
 import React from 'react';
 
-const Footer: React.FC = () => <h2>Rodapé</h2>;
+import { Container } from './styles';
+
+const Footer: React.FC = () => (
+  <Container>
+    <p>
+      <span>Desenvolvido por A&T - Soluções Web e Marketing</span>
+    </p>
+  </Container>
+);
 
 export default Footer;
