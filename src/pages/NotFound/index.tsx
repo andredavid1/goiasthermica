@@ -1,5 +1,13 @@
 import React from 'react';
+import { FiAlertOctagon } from 'react-icons/fi';
 
-const NotFound: React.FC = () => <h1>Página não encontrada</h1>;
+import { Container } from './styles';
+
+const NotFound: React.FC = () => (
+  <Container>
+    <FiAlertOctagon />
+    <span>Página não encontrada</span>
+  </Container>
+);
 
 export default NotFound;

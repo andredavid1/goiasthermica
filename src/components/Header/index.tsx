@@ -8,9 +8,9 @@ import { Container } from './styles';
 const Header: React.FC = () => (
   <Container>
     <nav>
-      <label htmlFor="check" className="checkbtn">
+      <div className="checkbtn">
         <FiMenu />
-      </label>
+      </div>
       <input type="checkbox" id="check" />
       <label className="logo">
         <FaSnowflake size={24} />

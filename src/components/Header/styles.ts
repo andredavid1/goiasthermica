@@ -54,12 +54,12 @@ export const Container = styled.header`
   }
 
   .checkbtn {
-    padding-top: 0.5rem;
     font-size: 3rem;
     color: white;
     float: right;
-    line-height: 6rem;
-    margin-right: 4rem;
+    height: 100%;
+    padding-top: 1.4rem;
+    padding-right: 3rem;
     cursor: pointer;
     display: none;
   }
