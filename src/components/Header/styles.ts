@@ -70,6 +70,7 @@ export const Container = styled.header`
         top: 6rem;
         left: -100%;
         text-align: center;
+        transition: left 0.4s;
 
         @media (min-width: 576px) {
           background: #0082e6;
