@@ -41,7 +41,7 @@
     ],
     "no-use-before-define": "off",
     "prettier/prettier": "error",
-    "jsx-a11y/label-has-associated-control": "off"
+    "eslint-disable-next-line react/jsx-no-comment-textnodes": "off"
   },
   "settings": {
     "import/resolver": {

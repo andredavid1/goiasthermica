@@ -79,7 +79,6 @@ export const BtnText = styled.span`
 export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
-  background-color: yellow;
   width: 100%;
   height: 3rem;
   margin: 0.4rem 0 0 0;

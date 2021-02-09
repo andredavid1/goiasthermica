@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { FiMenu } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -8,30 +9,33 @@ import { Container } from './styles';
 const Header: React.FC = () => (
   <Container>
     <nav>
-      <div className="checkbtn">
-        <FiMenu />
+      <div className="brand">
+        <label className="logo">
+          <FaSnowflake />
+          Goiás Thérmica
+        </label>
       </div>
-      <input type="checkbox" id="check" />
-      <label className="logo">
-        <FaSnowflake size={24} />
-        <Link to="/">Goiás Thérmica</Link>
-      </label>
-      <ul>
-        <li>
-          <Link className="active" to="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/">OrderSys</Link>
-        </li>
-        <li>
-          <Link to="/">page2</Link>
-        </li>
-        <li>
-          <Link to="/">page3</Link>
-        </li>
-      </ul>
+
+      <div className="menu">
+        <input type="checkbox" id="check" />
+        <label htmlFor="check" className="checkbtn">
+          <FiMenu />
+        </label>
+
+        <ul>
+          <li>
+            <Link className="active" to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/">About</Link>
+          </li>
+          <li>
+            <Link to="/">Services</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   </Container>
 );
