@@ -139,3 +139,76 @@ export const ButtonSearchContainer = styled.div`
     }
   }
 `;
+
+export const Table = styled.section`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem 0;
+`;
+
+export const Running = styled.table`
+  border-collapse: collapse;
+  width: 90%;
+
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  th {
+    padding: 1rem 0;
+    background-color: #4caf50;
+    color: white;
+  }
+
+  td {
+    font-size: 1.4rem;
+
+    > svg {
+      font-size: 2rem;
+    }
+  }
+`;
+
+export const Scheduled = styled.table`
+  border-collapse: collapse;
+  width: 90%;
+
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  th {
+    padding: 1rem 0;
+    background-color: #4caf50;
+    color: white;
+  }
+
+  td {
+    font-size: 1.4rem;
+
+    > svg {
+      font-size: 2rem;
+    }
+  }
+`;
