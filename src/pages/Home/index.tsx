@@ -5,6 +5,7 @@ import {
   FiPrinter,
   FiXCircle,
 } from 'react-icons/fi';
+import TitleBar from '../../components/TitleBar';
 
 import {
   Container,
@@ -52,6 +53,7 @@ const Home: React.FC = () => (
         </ButtonSearchContainer>
       </SearchContainer>
     </ActionsBar>
+    <TitleBar title="Ordens de Serviço" />
   </Container>
 );
 
