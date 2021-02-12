@@ -122,7 +122,7 @@ export const ButtonSearchContainer = styled.div`
   > button {
     border: none;
     background: none;
-    color: #f00;
+    color: #e61700;
     outline: none;
     width: 100%;
     height: 100%;
@@ -145,15 +145,22 @@ export const Table = styled.section`
   justify-content: center;
   width: 100%;
   margin: 1rem 0;
+  flex-direction: column;
+
+  h3 {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
 `;
 
 export const Running = styled.table`
   border-collapse: collapse;
   width: 90%;
+  margin: 0 auto;
 
   td,
   th {
-    border: 1px solid #ddd;
+    border: 1px solid #222;
     text-align: center;
   }
 
@@ -167,8 +174,9 @@ export const Running = styled.table`
 
   th {
     padding: 1rem 0;
-    background-color: #4caf50;
+    background-color: #00f;
     color: white;
+    font-size: 1.2rem;
   }
 
   td {
@@ -183,10 +191,11 @@ export const Running = styled.table`
 export const Scheduled = styled.table`
   border-collapse: collapse;
   width: 90%;
+  margin: 0 auto;
 
   td,
   th {
-    border: 1px solid #ddd;
+    border: 1px solid #222;
     text-align: center;
   }
 
@@ -200,8 +209,9 @@ export const Scheduled = styled.table`
 
   th {
     padding: 1rem 0;
-    background-color: #4caf50;
+    background-color: #e61700;
     color: white;
+    font-size: 1.2rem;
   }
 
   td {

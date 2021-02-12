@@ -1,8 +1,10 @@
+import { shade } from 'polished';
 import React from 'react';
 import {
   FiAlertCircle,
   FiCheckCircle,
   FiEdit,
+  FiPlayCircle,
   FiPlusCircle,
   FiPrinter,
   FiXCircle,
@@ -60,6 +62,7 @@ const Home: React.FC = () => (
     </ActionsBar>
     <TitleBar title="Ordens de Serviço" />
     <Table>
+      <h3>Serviços em andamento</h3>
       <Running>
         <thead>
           <tr>
@@ -75,8 +78,8 @@ const Home: React.FC = () => (
             <td>serviço 1</td>
             <td>07:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiCheckCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
@@ -84,8 +87,8 @@ const Home: React.FC = () => (
             <td>serviço 2</td>
             <td>08:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiCheckCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
@@ -93,8 +96,8 @@ const Home: React.FC = () => (
             <td>serviço 3</td>
             <td>09:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiCheckCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
@@ -102,8 +105,8 @@ const Home: React.FC = () => (
             <td>serviço 4</td>
             <td>10:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiCheckCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
@@ -111,8 +114,8 @@ const Home: React.FC = () => (
             <td>serviço 5</td>
             <td>11:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiCheckCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
         </tbody>
@@ -126,65 +129,60 @@ const Home: React.FC = () => (
       </Running>
     </Table>
     <Table>
+      <h3>Serviços agendados</h3>
       <Scheduled>
         <thead>
           <tr>
-            <th>item 1</th>
-            <th>item 2</th>
-            <th>item 3</th>
-            <th>item 4</th>
+            <th>Cliente</th>
+            <th>Serviço</th>
+            <th>Previsão</th>
             <th>{/* actions */}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>valor 1</td>
-            <td>Valor 2</td>
-            <td>Valor 3</td>
-            <td>Valor 4</td>
+            <td>cliente 6</td>
+            <td>serviço 6</td>
+            <td>13:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiPlayCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
-            <td>valor 1</td>
-            <td>Valor 2</td>
-            <td>Valor 3</td>
-            <td>Valor 4</td>
+            <td>cliente 7</td>
+            <td>serviço 7</td>
+            <td>14:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiPlayCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
-            <td>valor 1</td>
-            <td>Valor 2</td>
-            <td>Valor 3</td>
-            <td>Valor 4</td>
+            <td>cliente 8</td>
+            <td>serviço 8</td>
+            <td>15:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiPlayCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
-            <td>valor 1</td>
-            <td>Valor 2</td>
-            <td>Valor 3</td>
-            <td>Valor 4</td>
+            <td>cliente 9</td>
+            <td>serviço 9</td>
+            <td>16:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiPlayCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
           <tr>
-            <td>valor 1</td>
-            <td>Valor 2</td>
-            <td>Valor 3</td>
-            <td>Valor 4</td>
+            <td>cliente 10</td>
+            <td>serviço 10</td>
+            <td>17:00</td>
             <td>
-              <FiEdit />
-              <FiCheckCircle />
+              <FiEdit color={shade(0.4, 'yellow')} />
+              <FiPlayCircle color={shade(0.2, 'green')} />
             </td>
           </tr>
         </tbody>
