@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
+import { lighten, shade } from 'polished';
 
 export const Container = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ export const Button = styled.button`
 
 export const BtnIcon = styled.span`
   align-items: center;
-  background-color: ${shade(0.3, '#00f')};
+  background-color: ${shade(0.3, '#0082e6')};
   border-bottom-left-radius: 0.3rem;
   border-top-left-radius: 0.3rem;
   color: #fff;
@@ -65,7 +65,7 @@ export const BtnIcon = styled.span`
 
 export const BtnText = styled.span`
   align-items: center;
-  background-color: #00f;
+  background-color: #0082e6;
   border-bottom-right-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
   color: #fff;
@@ -150,6 +150,7 @@ export const Table = styled.section`
   h3 {
     width: 90%;
     margin: 0.5rem auto;
+    color: #333;
   }
 `;
 
@@ -174,7 +175,7 @@ export const Running = styled.table`
 
   th {
     padding: 1rem 0;
-    background-color: #00f;
+    background-color: #0082e6;
     color: white;
     font-size: 1.2rem;
   }
@@ -182,8 +183,40 @@ export const Running = styled.table`
   td {
     font-size: 1.4rem;
 
-    > svg {
-      font-size: 2rem;
+    > button {
+      background-color: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: color 0.4s;
+
+      > svg {
+        font-size: 2rem;
+      }
+
+      &.success {
+        color: green;
+
+        &:hover {
+          color: ${shade(0.3, 'green')};
+        }
+      }
+
+      &.warning {
+        color: yellow;
+
+        &:hover {
+          color: ${shade(0.3, 'yellow')};
+        }
+      }
+
+      &.danger {
+        color: red;
+
+        &:hover {
+          color: ${shade(0.3, 'red')};
+        }
+      }
     }
   }
 `;
@@ -209,7 +242,7 @@ export const Scheduled = styled.table`
 
   th {
     padding: 1rem 0;
-    background-color: #e61700;
+    background-color: ${lighten(0.15, '#e61700')};
     color: white;
     font-size: 1.2rem;
   }
@@ -217,8 +250,40 @@ export const Scheduled = styled.table`
   td {
     font-size: 1.4rem;
 
-    > svg {
-      font-size: 2rem;
+    > button {
+      background-color: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: color 0.4s;
+
+      > svg {
+        font-size: 2rem;
+      }
+
+      &.success {
+        color: green;
+
+        &:hover {
+          color: ${shade(0.5, 'green')};
+        }
+      }
+
+      &.warning {
+        color: yellow;
+
+        &:hover {
+          color: ${shade(0.3, 'yellow')};
+        }
+      }
+
+      &.danger {
+        color: red;
+
+        &:hover {
+          color: ${shade(0.3, 'red')};
+        }
+      }
     }
   }
 `;

@@ -1,4 +1,3 @@
-import { shade } from 'polished';
 import React from 'react';
 import {
   FiAlertCircle,
@@ -78,8 +77,12 @@ const Home: React.FC = () => (
             <td>serviço 1</td>
             <td>07:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiCheckCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiCheckCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -87,8 +90,12 @@ const Home: React.FC = () => (
             <td>serviço 2</td>
             <td>08:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiCheckCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiCheckCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -96,8 +103,12 @@ const Home: React.FC = () => (
             <td>serviço 3</td>
             <td>09:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiCheckCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiCheckCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -105,8 +116,12 @@ const Home: React.FC = () => (
             <td>serviço 4</td>
             <td>10:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiCheckCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiCheckCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -114,8 +129,12 @@ const Home: React.FC = () => (
             <td>serviço 5</td>
             <td>11:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiCheckCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiCheckCircle />
+              </button>
             </td>
           </tr>
         </tbody>
@@ -145,8 +164,12 @@ const Home: React.FC = () => (
             <td>serviço 6</td>
             <td>13:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiPlayCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiPlayCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -154,8 +177,12 @@ const Home: React.FC = () => (
             <td>serviço 7</td>
             <td>14:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiPlayCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiPlayCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -163,8 +190,12 @@ const Home: React.FC = () => (
             <td>serviço 8</td>
             <td>15:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiPlayCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiPlayCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -172,8 +203,12 @@ const Home: React.FC = () => (
             <td>serviço 9</td>
             <td>16:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiPlayCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiPlayCircle />
+              </button>
             </td>
           </tr>
           <tr>
@@ -181,8 +216,12 @@ const Home: React.FC = () => (
             <td>serviço 10</td>
             <td>17:00</td>
             <td>
-              <FiEdit color={shade(0.4, 'yellow')} />
-              <FiPlayCircle color={shade(0.2, 'green')} />
+              <button className="warning" type="button">
+                <FiEdit />
+              </button>
+              <button className="success" type="button">
+                <FiPlayCircle />
+              </button>
             </td>
           </tr>
         </tbody>
